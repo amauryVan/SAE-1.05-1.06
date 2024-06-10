@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Bellvision | Eco-mobilité</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://bellvision.fr"><img src="images/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="vehicules.html">Véhicules</a></li>
+                <li><a href="conditions.html">Conditions</a></li>
+                <li><a class="active" href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="login.html"><img id="profile" src="images/abstract-user-flat-4.svg" alt="profile"></a>
+        </nav>
+    </header>
+    <main>
+        <h3>Formulaire de réservation</h3>
+        <form action="confirmation.html">
+            <label for="username">Votre nom : *</label><br>
+            <input id="username" type="text" name="username" required>
+            <br>
+            <label for="lastname">Votre prénom : *</label><br>
+            <input id="lastname" type="text" name="lastname" required>
+            <br>
+            <label for="email">Email : *</label><br>
+            <input id="email" type="email" name="email" required>
+            <br>
+            <label for="tel">Téléphone : *</label><br>
+            <input id="tel" type="tel" name="tel" required>     
+            <br>
+            <label for="car-select">Véhicule souhaité : *</label><br>
+            <select name="cars" id="car-select">
+                <option value="">--Veuillez choisir un véhicule--</option>
+                <option value="AMI">Citroen AMI</option>
+                <option value="ZOE">Renault ZOE</option>
+                <option value="MEGANE">Renault MEGANE</option>
+                <option value="VELO">Vélo électrique</option>
+                <option value="TROTINETTE">Trotinette électrique</option>
+            </select>
+            <br>
+            <label for="location">Date de début de location : *</label><br>
+            <input type="date" id="location" name="location-start" value="2024-01-08" min="2024-01-08" max="2024-12-31" required>
+            <br>
+            <input type="submit" value="Valider">
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.bellvision.fr/mentions-legales-et-politique-de-confidentialite/"> Mentions légales & Politique de confidentialité</a>
+        <p>© 2023 - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
